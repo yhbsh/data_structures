@@ -55,7 +55,9 @@ bool trieinsert(trienode **root, char *signedtext)
 
 void printtrie_rec(trienode *node, unsigned char *prefix, int lenght, FILE *f, int *num_words)
 {
-    unsigned char newprefix[lenght + 2];
+    unsigned char *newprefix;
+    newprefix = (unsigned char *)malloc(sizeof(lenght + 2));
+
     memcpy(newprefix, prefix, lenght);
     newprefix[lenght + 1] = 0;
 
@@ -136,7 +138,7 @@ int main()
         for (int i = 0; text[i] != '\0'; i++)
             text[i] = tolower(text[i]);
         trieinsert(&root, text);
-        //printf("%s\n", text);
+        // printf("%s\n", text);
         text = strtok(NULL, separators);
     }
 
