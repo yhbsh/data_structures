@@ -1,0 +1,28 @@
+graph arbre {
+  "NIL0" [style=invis];
+  "225" -- "NIL0"  [style=invis];
+  "NIL1" [style=invis];
+  "225" -- "NIL1"  [style=invis];
+  "225" -- "396" 
+  "396" -- "321" 
+  "NIL2" [style=invis];
+  "396" -- "NIL2"  [style=invis];
+  "396" -- "856" 
+  "NIL3" [style=invis];
+  "321" -- "NIL3"  [style=invis];
+  "NIL4" [style=invis];
+  "321" -- "NIL4"  [style=invis];
+  "NIL5" [style=invis];
+  "321" -- "NIL5"  [style=invis];
+  "NIL6" [style=invis];
+  "856" -- "NIL6"  [style=invis];
+  "NIL7" [style=invis];
+  "856" -- "NIL7"  [style=invis];
+  "856" -- "916" 
+  "NIL8" [style=invis];
+  "916" -- "NIL8"  [style=invis];
+  "NIL9" [style=invis];
+  "916" -- "NIL9"  [style=invis];
+  "NIL10" [style=invis];
+  "916" -- "NIL10"  [style=invis];
+}
