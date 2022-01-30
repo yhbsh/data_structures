@@ -1,0 +1,291 @@
+digraph arbre {
+  "643" -> "403" 
+  "643" -> "786" 
+  "403" -> "190" 
+  "403" -> "526" 
+  "190" -> "77" 
+  "190" -> "314" 
+  "77" -> "22" 
+  "77" -> "133" 
+  "22" -> "15" 
+  "22" -> "52" 
+  "15" -> "9" 
+  "15" -> "19" 
+  "NIL0" [style=invis];
+  "9" -> "NIL0"  [style=invis];
+  "NIL1" [style=invis];
+  "9" -> "NIL1"  [style=invis];
+  "NIL2" [style=invis];
+  "19" -> "NIL2"  [style=invis];
+  "NIL3" [style=invis];
+  "19" -> "NIL3"  [style=invis];
+  "52" -> "40" 
+  "52" -> "70" 
+  "NIL4" [style=invis];
+  "40" -> "NIL4"  [style=invis];
+  "NIL5" [style=invis];
+  "40" -> "NIL5"  [style=invis];
+  "70" -> "56" 
+  "NIL6" [style=invis];
+  "70" -> "NIL6"  [style=invis];
+  "NIL7" [style=invis];
+  "56" -> "NIL7"  [style=invis];
+  "NIL8" [style=invis];
+  "56" -> "NIL8"  [style=invis];
+  "133" -> "123" 
+  "133" -> "149" 
+  "123" -> "94" 
+  "123" -> "127" 
+  "94" -> "88" 
+  "94" -> "122" 
+  "NIL9" [style=invis];
+  "88" -> "NIL9"  [style=invis];
+  "NIL10" [style=invis];
+  "88" -> "NIL10"  [style=invis];
+  "NIL11" [style=invis];
+  "122" -> "NIL11"  [style=invis];
+  "NIL12" [style=invis];
+  "122" -> "NIL12"  [style=invis];
+  "NIL13" [style=invis];
+  "127" -> "NIL13"  [style=invis];
+  "NIL14" [style=invis];
+  "127" -> "NIL14"  [style=invis];
+  "149" -> "134" 
+  "149" -> "161" 
+  "NIL15" [style=invis];
+  "134" -> "NIL15"  [style=invis];
+  "134" -> "144" 
+  "NIL16" [style=invis];
+  "144" -> "NIL16"  [style=invis];
+  "NIL17" [style=invis];
+  "144" -> "NIL17"  [style=invis];
+  "NIL18" [style=invis];
+  "161" -> "NIL18"  [style=invis];
+  "161" -> "165" 
+  "NIL19" [style=invis];
+  "165" -> "NIL19"  [style=invis];
+  "NIL20" [style=invis];
+  "165" -> "NIL20"  [style=invis];
+  "314" -> "256" 
+  "314" -> "367" 
+  "256" -> "192" 
+  "256" -> "311" 
+  "192" -> "191" 
+  "192" -> "237" 
+  "NIL21" [style=invis];
+  "191" -> "NIL21"  [style=invis];
+  "NIL22" [style=invis];
+  "191" -> "NIL22"  [style=invis];
+  "237" -> "204" 
+  "NIL23" [style=invis];
+  "237" -> "NIL23"  [style=invis];
+  "NIL24" [style=invis];
+  "204" -> "NIL24"  [style=invis];
+  "NIL25" [style=invis];
+  "204" -> "NIL25"  [style=invis];
+  "311" -> "260" 
+  "NIL26" [style=invis];
+  "311" -> "NIL26"  [style=invis];
+  "NIL27" [style=invis];
+  "260" -> "NIL27"  [style=invis];
+  "NIL28" [style=invis];
+  "260" -> "NIL28"  [style=invis];
+  "367" -> "337" 
+  "367" -> "383" 
+  "337" -> "325" 
+  "337" -> "354" 
+  "NIL29" [style=invis];
+  "325" -> "NIL29"  [style=invis];
+  "NIL30" [style=invis];
+  "325" -> "NIL30"  [style=invis];
+  "NIL31" [style=invis];
+  "354" -> "NIL31"  [style=invis];
+  "NIL32" [style=invis];
+  "354" -> "NIL32"  [style=invis];
+  "NIL33" [style=invis];
+  "383" -> "NIL33"  [style=invis];
+  "NIL34" [style=invis];
+  "383" -> "NIL34"  [style=invis];
+  "526" -> "460" 
+  "526" -> "606" 
+  "460" -> "421" 
+  "460" -> "505" 
+  "421" -> "413" 
+  "421" -> "439" 
+  "413" -> "410" 
+  "413" -> "420" 
+  "NIL35" [style=invis];
+  "410" -> "NIL35"  [style=invis];
+  "NIL36" [style=invis];
+  "410" -> "NIL36"  [style=invis];
+  "NIL37" [style=invis];
+  "420" -> "NIL37"  [style=invis];
+  "NIL38" [style=invis];
+  "420" -> "NIL38"  [style=invis];
+  "439" -> "425" 
+  "439" -> "452" 
+  "NIL39" [style=invis];
+  "425" -> "NIL39"  [style=invis];
+  "NIL40" [style=invis];
+  "425" -> "NIL40"  [style=invis];
+  "452" -> "448" 
+  "NIL41" [style=invis];
+  "452" -> "NIL41"  [style=invis];
+  "NIL42" [style=invis];
+  "448" -> "NIL42"  [style=invis];
+  "NIL43" [style=invis];
+  "448" -> "NIL43"  [style=invis];
+  "505" -> "487" 
+  "505" -> "509" 
+  "487" -> "476" 
+  "487" -> "495" 
+  "NIL44" [style=invis];
+  "476" -> "NIL44"  [style=invis];
+  "NIL45" [style=invis];
+  "476" -> "NIL45"  [style=invis];
+  "NIL46" [style=invis];
+  "495" -> "NIL46"  [style=invis];
+  "NIL47" [style=invis];
+  "495" -> "NIL47"  [style=invis];
+  "NIL48" [style=invis];
+  "509" -> "NIL48"  [style=invis];
+  "509" -> "525" 
+  "NIL49" [style=invis];
+  "525" -> "NIL49"  [style=invis];
+  "NIL50" [style=invis];
+  "525" -> "NIL50"  [style=invis];
+  "606" -> "578" 
+  "606" -> "624" 
+  "578" -> "534" 
+  "578" -> "596" 
+  "534" -> "531" 
+  "534" -> "555" 
+  "NIL51" [style=invis];
+  "531" -> "NIL51"  [style=invis];
+  "NIL52" [style=invis];
+  "531" -> "NIL52"  [style=invis];
+  "555" -> "540" 
+  "NIL53" [style=invis];
+  "555" -> "NIL53"  [style=invis];
+  "NIL54" [style=invis];
+  "540" -> "NIL54"  [style=invis];
+  "NIL55" [style=invis];
+  "540" -> "NIL55"  [style=invis];
+  "NIL56" [style=invis];
+  "596" -> "NIL56"  [style=invis];
+  "596" -> "599" 
+  "NIL57" [style=invis];
+  "599" -> "NIL57"  [style=invis];
+  "NIL58" [style=invis];
+  "599" -> "NIL58"  [style=invis];
+  "624" -> "617" 
+  "624" -> "628" 
+  "NIL59" [style=invis];
+  "617" -> "NIL59"  [style=invis];
+  "NIL60" [style=invis];
+  "617" -> "NIL60"  [style=invis];
+  "NIL61" [style=invis];
+  "628" -> "NIL61"  [style=invis];
+  "628" -> "640" 
+  "NIL62" [style=invis];
+  "640" -> "NIL62"  [style=invis];
+  "NIL63" [style=invis];
+  "640" -> "NIL63"  [style=invis];
+  "786" -> "745" 
+  "786" -> "953" 
+  "745" -> "700" 
+  "745" -> "765" 
+  "700" -> "691" 
+  "700" -> "734" 
+  "691" -> "685" 
+  "NIL64" [style=invis];
+  "691" -> "NIL64"  [style=invis];
+  "NIL65" [style=invis];
+  "685" -> "NIL65"  [style=invis];
+  "NIL66" [style=invis];
+  "685" -> "NIL66"  [style=invis];
+  "734" -> "706" 
+  "734" -> "737" 
+  "NIL67" [style=invis];
+  "706" -> "NIL67"  [style=invis];
+  "NIL68" [style=invis];
+  "706" -> "NIL68"  [style=invis];
+  "NIL69" [style=invis];
+  "737" -> "NIL69"  [style=invis];
+  "NIL70" [style=invis];
+  "737" -> "NIL70"  [style=invis];
+  "765" -> "757" 
+  "765" -> "775" 
+  "757" -> "751" 
+  "757" -> "762" 
+  "NIL71" [style=invis];
+  "751" -> "NIL71"  [style=invis];
+  "751" -> "755" 
+  "NIL72" [style=invis];
+  "755" -> "NIL72"  [style=invis];
+  "NIL73" [style=invis];
+  "755" -> "NIL73"  [style=invis];
+  "NIL74" [style=invis];
+  "762" -> "NIL74"  [style=invis];
+  "NIL75" [style=invis];
+  "762" -> "NIL75"  [style=invis];
+  "775" -> "774" 
+  "775" -> "776" 
+  "NIL76" [style=invis];
+  "774" -> "NIL76"  [style=invis];
+  "NIL77" [style=invis];
+  "774" -> "NIL77"  [style=invis];
+  "NIL78" [style=invis];
+  "776" -> "NIL78"  [style=invis];
+  "NIL79" [style=invis];
+  "776" -> "NIL79"  [style=invis];
+  "953" -> "872" 
+  "953" -> "975" 
+  "872" -> "846" 
+  "872" -> "910" 
+  "846" -> "832" 
+  "846" -> "859" 
+  "NIL80" [style=invis];
+  "832" -> "NIL80"  [style=invis];
+  "NIL81" [style=invis];
+  "832" -> "NIL81"  [style=invis];
+  "NIL82" [style=invis];
+  "859" -> "NIL82"  [style=invis];
+  "NIL83" [style=invis];
+  "859" -> "NIL83"  [style=invis];
+  "910" -> "897" 
+  "910" -> "943" 
+  "897" -> "885" 
+  "897" -> "904" 
+  "NIL84" [style=invis];
+  "885" -> "NIL84"  [style=invis];
+  "NIL85" [style=invis];
+  "885" -> "NIL85"  [style=invis];
+  "NIL86" [style=invis];
+  "904" -> "NIL86"  [style=invis];
+  "NIL87" [style=invis];
+  "904" -> "NIL87"  [style=invis];
+  "NIL88" [style=invis];
+  "943" -> "NIL88"  [style=invis];
+  "NIL89" [style=invis];
+  "943" -> "NIL89"  [style=invis];
+  "975" -> "967" 
+  "975" -> "985" 
+  "967" -> "964" 
+  "967" -> "969" 
+  "NIL90" [style=invis];
+  "964" -> "NIL90"  [style=invis];
+  "NIL91" [style=invis];
+  "964" -> "NIL91"  [style=invis];
+  "NIL92" [style=invis];
+  "969" -> "NIL92"  [style=invis];
+  "NIL93" [style=invis];
+  "969" -> "NIL93"  [style=invis];
+  "NIL94" [style=invis];
+  "985" -> "NIL94"  [style=invis];
+  "985" -> "998" 
+  "NIL95" [style=invis];
+  "998" -> "NIL95"  [style=invis];
+  "NIL96" [style=invis];
+  "998" -> "NIL96"  [style=invis];
+}
