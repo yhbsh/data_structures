@@ -1,28 +1,98 @@
-graph arbre {
+digraph arbre {
+  "929" -> "344" 
   "NIL0" [style=invis];
-  "225" -- "NIL0"  [style=invis];
+  "929" -> "NIL0"  [style=invis];
   "NIL1" [style=invis];
-  "225" -- "NIL1"  [style=invis];
-  "225" -- "396" 
-  "396" -- "321" 
+  "929" -> "NIL1"  [style=invis];
+  "344" -> "196" 
   "NIL2" [style=invis];
-  "396" -- "NIL2"  [style=invis];
-  "396" -- "856" 
+  "344" -> "NIL2"  [style=invis];
+  "344" -> "561" 
+  "196" -> "44" 
   "NIL3" [style=invis];
-  "321" -- "NIL3"  [style=invis];
+  "196" -> "NIL3"  [style=invis];
+  "196" -> "225" 
+  "44" -> "25" 
   "NIL4" [style=invis];
-  "321" -- "NIL4"  [style=invis];
+  "44" -> "NIL4"  [style=invis];
+  "44" -> "184" 
+  "25" -> "0" 
   "NIL5" [style=invis];
-  "321" -- "NIL5"  [style=invis];
+  "25" -> "NIL5"  [style=invis];
   "NIL6" [style=invis];
-  "856" -- "NIL6"  [style=invis];
+  "25" -> "NIL6"  [style=invis];
   "NIL7" [style=invis];
-  "856" -- "NIL7"  [style=invis];
-  "856" -- "916" 
+  "0" -> "NIL7"  [style=invis];
   "NIL8" [style=invis];
-  "916" -- "NIL8"  [style=invis];
+  "0" -> "NIL8"  [style=invis];
   "NIL9" [style=invis];
-  "916" -- "NIL9"  [style=invis];
+  "0" -> "NIL9"  [style=invis];
+  "184" -> "89" 
   "NIL10" [style=invis];
-  "916" -- "NIL10"  [style=invis];
+  "184" -> "NIL10"  [style=invis];
+  "NIL11" [style=invis];
+  "184" -> "NIL11"  [style=invis];
+  "NIL12" [style=invis];
+  "89" -> "NIL12"  [style=invis];
+  "NIL13" [style=invis];
+  "89" -> "NIL13"  [style=invis];
+  "89" -> "129" 
+  "NIL14" [style=invis];
+  "129" -> "NIL14"  [style=invis];
+  "NIL15" [style=invis];
+  "129" -> "NIL15"  [style=invis];
+  "NIL16" [style=invis];
+  "129" -> "NIL16"  [style=invis];
+  "225" -> "224" 
+  "NIL17" [style=invis];
+  "225" -> "NIL17"  [style=invis];
+  "225" -> "336" 
+  "NIL18" [style=invis];
+  "224" -> "NIL18"  [style=invis];
+  "NIL19" [style=invis];
+  "224" -> "NIL19"  [style=invis];
+  "NIL20" [style=invis];
+  "224" -> "NIL20"  [style=invis];
+  "NIL21" [style=invis];
+  "336" -> "NIL21"  [style=invis];
+  "NIL22" [style=invis];
+  "336" -> "NIL22"  [style=invis];
+  "NIL23" [style=invis];
+  "336" -> "NIL23"  [style=invis];
+  "561" -> "521" 
+  "NIL24" [style=invis];
+  "561" -> "NIL24"  [style=invis];
+  "561" -> "641" 
+  "NIL25" [style=invis];
+  "521" -> "NIL25"  [style=invis];
+  "NIL26" [style=invis];
+  "521" -> "NIL26"  [style=invis];
+  "NIL27" [style=invis];
+  "521" -> "NIL27"  [style=invis];
+  "641" -> "609" 
+  "NIL28" [style=invis];
+  "641" -> "NIL28"  [style=invis];
+  "641" -> "801" 
+  "NIL29" [style=invis];
+  "609" -> "NIL29"  [style=invis];
+  "NIL30" [style=invis];
+  "609" -> "NIL30"  [style=invis];
+  "NIL31" [style=invis];
+  "609" -> "NIL31"  [style=invis];
+  "801" -> "681" 
+  "NIL32" [style=invis];
+  "801" -> "NIL32"  [style=invis];
+  "NIL33" [style=invis];
+  "801" -> "NIL33"  [style=invis];
+  "681" -> "656" 
+  "NIL34" [style=invis];
+  "681" -> "NIL34"  [style=invis];
+  "NIL35" [style=invis];
+  "681" -> "NIL35"  [style=invis];
+  "NIL36" [style=invis];
+  "656" -> "NIL36"  [style=invis];
+  "NIL37" [style=invis];
+  "656" -> "NIL37"  [style=invis];
+  "NIL38" [style=invis];
+  "656" -> "NIL38"  [style=invis];
 }
