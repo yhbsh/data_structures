@@ -28,13 +28,13 @@ void init_hash_table(int *table,int table_size)
     for (int i = 0; i < table_size; i++)
     {
         int data;
-        data=rand() % 3000;
+        data=rand() % 300;
         // scanf("%d", &data);
 
         bool inserted = insert(table, data,table_size);
 
         while (inserted==false) {
-            data=rand() % 3000;
+            data=rand() % 300;
             // printf("\ndata exists please enter another data: ");
             // scanf("%d", &data);
             inserted = insert(table, data,table_size);

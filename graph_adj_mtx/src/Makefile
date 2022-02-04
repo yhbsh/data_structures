@@ -2,7 +2,7 @@
 
 
 vis: run
-	dot -Tpng ..\output\out.dot -o ..\output\out.png && ..\output\out.png
+	dot -Tjpg ..\output\out.dot -o ..\output\out.jpg && ..\output\out.jpg
 
 run: main
 	..\exe\main.exe
@@ -13,4 +13,4 @@ main: main.c
 
 
 clean:
-	del ..\exe\*.exe ..\exe\*.png ..\output\*
+	del ..\exe\*.exe ..\exe\*.jpg ..\output\*

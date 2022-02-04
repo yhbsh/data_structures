@@ -93,13 +93,16 @@ void print_graph(graph *g)
     FILE *out = fopen("..\\output\\out.dot", "w");
 
     fprintf(out, "graph {\n");
-    // fprintf(out, "\tordering = out;\n");
+    fprintf(out, "\tordering = out;\n");
     // fprintf(out, "\tsplines = false;\n");
     for (int from = 0; from < g->num_nodes; from++)
     {
+        fprintf(out, "\t%d [style=filled, fillcolor=\"white\", fontcolor=\"black\", fontsize=12, shape=doublecircle, fontname=\"Comic Sans MS\"];\n", g->vertices[from]);
         for (int to = from; to < g->num_nodes; to++)
-            if (g->edges[from][to] && g->edges[to][from])
+            if (g->edges[from][to] && g->edges[to][from]) {
+                fprintf(out, "\t%d [style=filled, fillcolor=\"white\", fontcolor=\"black\", fontsize=12, shape=doublecircle, fontname=\"Comic Sans MS\"];\n", g->vertices[to]);
                 fprintf(out, "\t%d -- %d [label=\"%d\"];\n", g->vertices[from], g->vertices[to], g->edges[from][to]);
+            }
     }
     fprintf(out, "}\n");
     // system("..\\output\\out.png");
