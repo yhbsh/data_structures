@@ -1,6 +1,6 @@
 # Welcome to C/C++ - Data Structures Implementation!
 
-## How to run code:
+## How to run code
     - make sure you have installed gnu-make
     - go the "src" folder of the data structure you want to compile/visualize
     - open terminal and type "make"
