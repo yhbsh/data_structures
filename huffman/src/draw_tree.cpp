@@ -1,6 +1,6 @@
 
 
-void dessinArbre1(node* R, FILE *f, int *nbNil)
+void dessinArbre1(node *R, FILE *f, int *nbNil)
 {
     int info, info_fg, info_fd;
     if (R != nullptr)
@@ -11,12 +11,14 @@ void dessinArbre1(node* R, FILE *f, int *nbNil)
         {
 
             info_fg = R->left->frequency;
-            if (R->left->data == '\0') {
+            if (R->left->data == '\0')
+            {
                 fprintf(f, "  \"{%d %c %d}\" -> \"{%d %c %d}\"[label=0, color=red] \n", info, R->data != '\0' ? R->data : ' ', R->pos, info_fg, ' ', R->left->pos);
-            } else {
+            }
+            else
+            {
                 fprintf(f, "  \"{%d %c %d}\" -> \"{%d - %c}\"[label=0, color=red] \n", info, R->data != '\0' ? R->data : ' ', R->pos, info_fg, R->left->data);
             }
-            
 
             // Dessiner un fils NIL virtuel et invisible au milieu (pour une meilleure s�paration des fils gauches et droits)
             fprintf(f, "  \"NIL%d\" [style=invis];\n", *nbNil);
@@ -25,12 +27,14 @@ void dessinArbre1(node* R, FILE *f, int *nbNil)
 
             info_fd = R->right->frequency;
 
-            if (R->right->data == '\0') {
+            if (R->right->data == '\0')
+            {
                 fprintf(f, "  \"{%d %c %d}\" -> \"{%d %c %d}\"[label=1, color=blue] \n", info, R->data != '\0' ? R->data : ' ', R->pos, info_fd, ' ', R->right->pos);
-            } else {
+            }
+            else
+            {
                 fprintf(f, "  \"{%d %c %d}\" -> \"{%d - %c}\"[label=1, color=blue] \n", info, R->data != '\0' ? R->data : ' ', R->pos, info_fd, R->right->data);
             }
-            
         }
 
         // Dessiner les sous-arbres gauche et droit
@@ -39,8 +43,7 @@ void dessinArbre1(node* R, FILE *f, int *nbNil)
     }
 }
 
-
-void Draw_Huffman_tree(node* root)
+void Draw_Huffman_tree(node *root)
 {
 
     int nbNil;
@@ -54,9 +57,6 @@ void Draw_Huffman_tree(node* root)
 
         fprintf(f, "digraph arbre {\n");
 
-        // fprintf(f, "\tordering = out;\n");
-        // fprintf(f, "\tsplines = false;\n");
-
         nbNil = 0;
         dessinArbre1(root, f, &nbNil);
 
@@ -64,14 +64,7 @@ void Draw_Huffman_tree(node* root)
 
         fclose(f);
 
-        char cmd[50];
         system("dot -Tjpg ../out/out.dot -o ../out/out.jpg");
-
-
-        char open[20];
-        sprintf(open, "..\\out\\out.jpg");
-        system(open);
-
-    
+        system("open ../out/out.jpg");
     }
 }
