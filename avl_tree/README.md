@@ -1,4 +1,4 @@
-# Welcome to the avl_tree section!
+# Welcome to the avl_tree section
 
 # this is how the end result will look like after inserting some number of random values in the tree
 
