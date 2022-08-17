@@ -1,28 +1,23 @@
 
 #include "./avl_functions.cpp"
 
-
-
-
-int main() {
+int main()
+{
     srand(time(nullptr));
     node *root = nullptr;
-    int n, sortie = 1;
+    int n;
 
     cout << "Number of Nodes: ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         int data;
         data = rand() % 1000;
-        // cin >> data;
-        cout << "data: " << data << endl;
-        root = insert_avl(root, data, &sortie);
+        root = insert_avl(root, data);
     }
 
-
-
-    DrawTree(root, &sortie);
+    DrawTree(root);
 
     return 0;
 }

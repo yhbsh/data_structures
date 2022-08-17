@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void DrawTree(node *root, int *sortie)
+void DrawTree(node *root)
 {
 
     int nbNil;
@@ -15,25 +15,16 @@ void DrawTree(node *root, int *sortie)
     else
     {
         char fname[50];
-        sprintf(fname, "../out/out%d.dot", *sortie);
+        sprintf(fname, "../out/out.dot");
         f = fopen(fname, "w");
 
         fprintf(f, "digraph arbre {\n");
-
-        // fprintf(f, "\tordering = out;\n");
-        // fprintf(f, "\tsplines = false;\n");
 
         nbNil = 0;
         dessinArbre(root, f, &nbNil);
 
         fprintf(f, "}\n");
         fclose(f);
-        char cmd[50];
-
-        sprintf(cmd, "dot -Tjpg ../out/out%d.dot -o ../out/out%d.jpg && ..\\out\\out%d.jpg", *sortie, *sortie, *sortie);
-
-        system(cmd);
-        (*sortie)++;
     }
 }
 
@@ -53,13 +44,13 @@ void dessinArbre(node *R, FILE *f, int *nbNil)
         else
         {
             fprintf(f, "  \"NIL%d\" [style=invis];\n", *nbNil);
-            fprintf(f, "  \"%d\" -> \"NIL%d\" ", info,(*nbNil)++);
+            fprintf(f, "  \"%d\" -> \"NIL%d\" ", info, (*nbNil)++);
             fprintf(f, " [style=invis];\n");
         }
 
         // Dessiner un fils NIL virtuel et invisible au milieu (pour une meilleure s�paration des fils gauches et droits)
         fprintf(f, "  \"NIL%d\" [style=invis];\n", *nbNil);
-        fprintf(f, "  \"%d\" -> \"NIL%d\" ", info ,(*nbNil)++);
+        fprintf(f, "  \"%d\" -> \"NIL%d\" ", info, (*nbNil)++);
         fprintf(f, " [style=invis];\n");
 
         // Dessiner un arc vers le fils droit
