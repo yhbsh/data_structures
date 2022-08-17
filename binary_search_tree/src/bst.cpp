@@ -1,15 +1,13 @@
-/*  
+/*
     Created 23/01/2022 12:39
-    By --HoussemBousmaha-- 
+    By --HoussemBousmaha--
 */
-
-
 
 #include "./bst_functions.cpp"
 
 using namespace std;
 
-main()
+int main()
 {
     srand(time(nullptr));
     int n;

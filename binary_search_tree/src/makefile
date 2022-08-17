@@ -1,15 +1,15 @@
 
 
 vis: run
-	dot -Tpng ..\out\out.dot -o ..\out\out.png && ..\out\out.png
+	dot -Tjpeg ../out/out.dot -o ../out/out.jpeg && open ../out/out.jpeg
 
 run: bst
-	..\exe\bst.exe
+	../run/bst
 
 bst: bst.cpp
-	g++ bst.cpp -o ../exe/bst.exe
+	g++-12 bst.cpp -o ../run/bst
 
 
 
 clean:
-	del ..\exe\*.exe ..\exe\*.png ..\out\*
+	rm -r ../run/ ../out/ 

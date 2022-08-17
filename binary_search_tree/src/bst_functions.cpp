@@ -1,12 +1,7 @@
-#include <iostream>
-#include <stack>
-#include <queue>
-#include <time.h>
+#include <bits/stdc++.h>
 #include "../lib/bst_structures.hpp"
 #include "../lib/bst_functions.hpp"
 #include "./bst_draw.cpp"
-
-
 
 nodeptr new_node(int val)
 {

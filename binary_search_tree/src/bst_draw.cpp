@@ -1,6 +1,5 @@
 #include "../lib/bst_draw.hpp"
 
-
 void DrawTree(nodeptr root)
 {
 
@@ -23,7 +22,6 @@ void DrawTree(nodeptr root)
 
         fprintf(f, "}\n");
         fclose(f);
-    
     }
 }
 
