@@ -44,7 +44,6 @@ void list_free(struct node *head) {
 }
 
 int main(void) {
-
     srand(time(0));
     struct node *head = NULL;
 
