@@ -39,9 +39,8 @@ void list_free(struct node *head) {
     if (head == NULL)
         return;
 
-    for (struct node *temp = head->next, *prev = head; temp != NULL; prev = temp, temp = temp->next) {
+    for (struct node *temp = head->next, *prev = head; temp != NULL; prev = temp, temp = temp->next)
         free(prev);
-    }
 }
 
 int main(void) {
