@@ -4,7 +4,7 @@
 #include <time.h>
 
 #define MAX 300
-#define COUNT 50
+#define COUNT 500
 
 struct node_t {
   struct node_t *left, *right;
@@ -19,6 +19,7 @@ struct stack_t {
 void inorder_iter(struct node_t *root) {
   struct node_t *temp = root;
   struct stack_t st = {0};
+  int count = MAX;
 
   while (true) {
     while (temp != NULL) {
@@ -30,13 +31,20 @@ void inorder_iter(struct node_t *root) {
       break;
 
     temp = st.data[--st.size];
+
     if (temp->right != NULL && temp->left != NULL) {
-      printf("\t%d\t->\t%d;\n", temp->data, temp->right->data);
-      printf("\t%d\t->\t%d;\n", temp->data, temp->left->data);
+      printf("\t%-5d->%5d%22c\n", temp->data, temp->right->data, ';');
+      printf("\t%-5d->%5d%22c\n", temp->data, temp->left->data, ';');
     } else if (temp->right != NULL) {
-      printf("\t%d\t->\t%d;\n", temp->data, temp->right->data);
+      printf("\t%-5d->%5d%22c\n", temp->data, temp->right->data, ';');
+
+      printf("\t%-13d%20s;\n", count, "[style=invis]");
+      printf("\t%-5d->%5d %20s;\n", temp->data, count++, "[style=invis]");
     } else if (temp->left != NULL) {
-      printf("\t%d\t->\t%d;\n", temp->data, temp->left->data);
+      printf("\t%-5d->%5d%22c\n", temp->data, temp->left->data, ';');
+
+      printf("\t%-13d%20s%c\n", count, "[style=invis]", ';');
+      printf("\t%-5d->%5d %20s;\n", temp->data, count++, "[style=invis]");
     }
 
     temp = temp->right;
