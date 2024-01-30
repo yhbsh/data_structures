@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX 300
-#define COUNT 500
+#define MAX 200000
+#define COUNT 10000
 
 struct node_t {
   struct node_t *left, *right;
