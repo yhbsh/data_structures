@@ -4,31 +4,47 @@
 #include <time.h>
 
 #define MAX 300
-#define COUNT 600
+#define COUNT 50
 
 struct node_t {
   struct node_t *left, *right;
   int data;
 };
 
-void inorder(FILE *stream, struct node_t *root) {
-  if (root == NULL)
-    return;
+struct stack_t {
+  struct node_t *data[COUNT];
+  int size;
+};
 
-  inorder(stream, root->left);
-  if (root->right != NULL && root->left != NULL) {
-    fprintf(stream, "\t%d\t->\t%d;\n", root->data, root->right->data);
-    fprintf(stream, "\t%d\t->\t%d;\n", root->data, root->left->data);
-  } else if (root->right != NULL) {
-    fprintf(stream, "\t%d\t->\t%d;\n", root->data, root->right->data);
-  } else if (root->left != NULL) {
-    fprintf(stream, "\t%d\t->\t%d;\n", root->data, root->left->data);
-  }
-  inorder(stream, root->right);
+void inorder_iter(struct node_t *root) {
+  struct node_t *temp = root;
+  struct stack_t st = {0};
+
+  while (true) {
+    while (temp != NULL) {
+      st.data[st.size++] = temp;
+      temp = temp->left;
+    }
+
+    if (st.size == 0)
+      break;
+
+    temp = st.data[--st.size];
+    if (temp->right != NULL && temp->left != NULL) {
+      printf("\t%d\t->\t%d;\n", temp->data, temp->right->data);
+      printf("\t%d\t->\t%d;\n", temp->data, temp->left->data);
+    } else if (temp->right != NULL) {
+      printf("\t%d\t->\t%d;\n", temp->data, temp->right->data);
+    } else if (temp->left != NULL) {
+      printf("\t%d\t->\t%d;\n", temp->data, temp->left->data);
+    }
+
+    temp = temp->right;
+  };
 }
 
 int main(void) {
-  srand(time(NULL));
+  //  srand(time(NULL));
 
   struct node_t *root, *temp;
 
@@ -63,15 +79,7 @@ int main(void) {
     }
   }
 
-  FILE *f = fopen("main.dot", "wb");
-  fprintf(f, "digraph G {\n");
-  inorder(f, root);
-  fprintf(f, "}");
-  fclose(f);
-
-  system("dot -Tjpg -o main.jpg main.dot");
-  system("open main.jpg");
-
-  free(root);
-  root = NULL;
+  printf("digraph G {\n");
+  inorder_iter(root);
+  printf("}");
 }
