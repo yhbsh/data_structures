@@ -16,7 +16,7 @@ struct stack_t {
   int size;
 };
 
-void inorder_iter(struct node_t *root) {
+void inorder(struct node_t *root) {
   struct node_t *temp = root;
   struct stack_t st = {0};
   int count = MAX;
@@ -88,6 +88,6 @@ int main(void) {
   }
 
   printf("digraph G {\n");
-  inorder_iter(root);
+  inorder(root);
   printf("}");
 }
